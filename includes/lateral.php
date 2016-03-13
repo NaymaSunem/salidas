@@ -26,35 +26,50 @@
 
             <div class="menu_section">
                 <?php if($tipo_usuario==ESTUDIANTE){?>
-                <h3>General</h3>
+                <h3>ALUMNO</h3>
                 <ul class="nav side-menu">
                     <li><a><i class="fa fa-home"></i> Menú <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu" style="display: none">
-                            <li><a href="index.php">Nueva salida</a>
+                            <li><a href="solicitarSalida.php">Nueva salida</a>
                             </li>
-                            <li><a href="index2.html">Seguimiento de salida</a>
+                            <li><a href="seguimiento.php">Seguimiento de salida</a>
                             </li>
-                            <li><a href="index3.html">Historial de salida</a>
+                            <li><a href="#">Historial de salida</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
                 <?php } ?>
-                <?php if($tipo_usuario==MAESTRO){?>
-                <h3>Maestros</h3>
+                <?php if($tipo_usuario==JEFE_DEPARTAMENTO){?>
+                <h3>JEFE DE DEPARTAMENTO</h3>
                 <ul class="nav side-menu">
                     <li><a><i class="fa fa-home"></i> Menú <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu" style="display: none">
-                            <li><a href="index.php">Nueva salida</a>
+                            <li><a href="seguimiento.php">Peticiones Nuevas</a>
                             </li>
-                            <li><a href="index2.html">Autorizar Salida</a>
+                            <li><a href="#">Alunos Fuera</a>
                             </li>
-                            <li><a href="index3.html">Ver Historial</a>
+                            <li><a href="#">Historial</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
                 <?php } ?>
+
+                <?php if($tipo_usuario==VIGILACIA){?>
+                    <h3>VIGILANCIA</h3>
+                    <ul class="nav side-menu">
+                        <li><a><i class="fa fa-home"></i> Menú <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu" style="display: none">
+                                <li><a href="index.php">Registrar Salidad/Regreso</a>
+                                <li><a href="index3.html">Reportes</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                <?php } ?>
+
+
             </div>
 
         </div>
